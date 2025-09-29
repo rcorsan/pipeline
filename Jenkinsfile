@@ -4,17 +4,17 @@ agent any
     stage('Build') {
       steps {
         git 'https://github.com/rcorsan/pipeline.git'
-        bat 'echo Construyendo...' [cite: 94]
+        bat 'echo Construyendo...'
       }
     }
   stage('Test') {
     steps {
-      bat 'echo Probando...' [cite: 99]
+      bat 'echo Probando...'
     }
   }
   stage('Deploy') {
     steps {
-      bat 'echo "Desplegando..."' [cite: 104]
+      bat 'echo "Desplegando..."'
     }
   }
 }
