@@ -3,7 +3,7 @@ agent any
   stages {
     stage('Build') {
       steps {
-        git branch: 'main'. url: 'https://github.com/rcorsan/pipeline.git'
+        git branch: 'main', url: 'https://github.com/rcorsan/pipeline.git'
         bat 'echo Construyendo...'
       }
     }
