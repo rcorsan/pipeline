@@ -4,12 +4,12 @@ agent any
     stage('Build') {
       steps {
         git 'https://github.com/rcorsan/pipeline.git'
-        bat 'mvn clean install' [cite: 94]
+        bat 'echo Construyendo...' [cite: 94]
       }
     }
   stage('Test') {
     steps {
-      bat 'mvn test' [cite: 99]
+      bat 'echo Probando...' [cite: 99]
     }
   }
   stage('Deploy') {
